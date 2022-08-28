@@ -86,9 +86,9 @@ public class caesar {
 
             String fjalia = temp.toUpperCase();
             System.out.print("Please write the number of key: ");
-            int k = input.nextInt();
+            long k = input.nextLong();
 
-            int[] vargu = new int[fjalia.length()];
+            long[] vargu = new long[fjalia.length()];
             for (int i = 0; i < fjalia.length(); i++) {
 
                 if (fjalia.charAt(i) == '\u0020') {

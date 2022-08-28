@@ -1,6 +1,7 @@
+package Java6;
 import java.util.Scanner;
 
-public class Caesar {
+public class caesar {
     public static void main(String[] args) {
     //Vlene per alfabetin anglez (26 shkronja) dhe eshte perdorur tabela ASCII (Vlerat ascii).
 
@@ -11,14 +12,13 @@ public class Caesar {
         System.out.println("Decryption 2: ");
         int zgjedhja = input.nextInt();
 
-        while (!(zgjedhja == 1 || zgjedhja == 2)) {     //Loop-Warni nese shtyp diçka tjeter ne vend te 1 dhe 2.
+        while (!(zgjedhja == 1 || zgjedhja == 2)) {     //Loop nese shtyp diçka tjeter ne vend te 1 dhe 2.
             System.out.println("Please write 1 or 2!");
             zgjedhja = input.nextInt();
         }
 
         input.nextLine();
 
-        //ENKRIPTIMI / ENCRYPTION / ENCHIPHERING
         if (zgjedhja == 1) {
             System.out.print("Please write a text: ");
             String temp = input.nextLine();
@@ -32,9 +32,9 @@ public class Caesar {
 
             String fjalia = temp.toUpperCase();
             System.out.print("Please write the number of key: ");
-            int k = input.nextInt();
+            long k = input.nextLong();
 
-            int[] vargu = new int[fjalia.length()];
+            long[] vargu = new long[fjalia.length()];
             for (int i = 0; i < fjalia.length(); i++) {
 
                 if (fjalia.charAt(i) == '\u0020') {
@@ -49,6 +49,9 @@ public class Caesar {
                         if (t == k) {
                             vargu[i] = f;
                             break;
+                        }
+                        if (f == 90) {
+                            f = 64;
                         }
                     }
                 }
@@ -95,11 +98,15 @@ public class Caesar {
                 else if ((int) fjalia.charAt(i) - k < 65) {
 
                     int t = (int) fjalia.charAt(i) - 65;
-                    for (int f = 90; f > 65; f--) {
+                    for (int f = 90; f >= 65; f--) {
                         t++;
                         if (t == k) {
                             vargu[i] = f;
                             break;
+                        }
+
+                        if (f == 65) {
+                            f = 91;
                         }
                     }
                 }

@@ -11,13 +11,14 @@ public class Caesar {
         System.out.println("Decryption 2: ");
         int zgjedhja = input.nextInt();
 
-        while (!(zgjedhja == 1 || zgjedhja == 2)) {     //Loop-Warni nese shtyp diçka tjeter ne vend te 1 dhe 2.
+        while (!(zgjedhja == 1 || zgjedhja == 2)) {     //Loop-Warni nese shtyp diÃ§ka tjeter ne vend te 1 dhe 2.
             System.out.println("Please write 1 or 2!");
             zgjedhja = input.nextInt();
         }
 
         input.nextLine();
 
+        //ENKRIPTIMI / ENCRYPTION / ENCHIPHERING
         if (zgjedhja == 1) {
             System.out.print("Please write a text: ");
             String temp = input.nextLine();

@@ -1,3 +1,3 @@
 CAESAR CIPHER / ALGORITMI I CEZARIT / CEZARIN ALGORITMASI
 
-Using ASCII CODE
+<b>Enkriptimi dhe Dekriptimi i teksteve duke përdorur Cezar Algoritmin </b>

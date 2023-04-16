@@ -4,7 +4,7 @@
 <b>Enkriptimi dhe Dekriptimi i teksteve duke përdorur Cezar Algoritmin </b>
 
 
-Technologies Used
+<h1>Technologies Used</h1>
 <ul>
 <li> JAVA</li>
 
